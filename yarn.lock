@@ -2157,7 +2157,7 @@ __metadata:
     gulp: ^4.0.2
     gulp-bump: ^3.2.0
     gulp-ignore: ^3.0.0
-    gulp-typedoc: ^2.2.9
+    gulp-typedoc: ^3.0.0
     jasmine: ^3.6.1
     jasmine-core: ~3.6.0
     jasmine-spec-reporter: ~5.0.0
@@ -2173,7 +2173,7 @@ __metadata:
     ts-node: ~8.3.0
     tslib: ^2.0.0
     tslint: ~6.1.0
-    typedoc: ^0.20.19
+    typedoc: ^0.22.0
     typescript: 4.0.8
     zone.js: ~0.10.2
   languageName: unknown
@@ -3372,13 +3372,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"at-least-node@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "at-least-node@npm:1.0.0"
-  checksum: 463e2f8e43384f1afb54bc68485c436d7622acec08b6fad269b421cb1d29cebb5af751426793d0961ed243146fe4dc983402f6d5a51b720b277818dbf6f2e49e
-  languageName: node
-  linkType: hard
-
 "atob@npm:^2.1.1, atob@npm:^2.1.2":
   version: 2.1.2
   resolution: "atob@npm:2.1.2"
@@ -3650,6 +3643,15 @@ __metadata:
     balanced-match: ^1.0.0
     concat-map: 0.0.1
   checksum: faf34a7bb0c3fcf4b59c7808bc5d2a96a40988addf2e7e09dfbb67a2251800e0d14cd2bfc1aa79174f2f5095c54ff27f46fb1289fe2d77dac755b5eb3434cc07
+  languageName: node
+  linkType: hard
+
+"brace-expansion@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "brace-expansion@npm:2.0.1"
+  dependencies:
+    balanced-match: ^1.0.0
+  checksum: a61e7cd2e8a8505e9f0036b3b6108ba5e926b4b55089eeb5550cd04a471fe216c96d4fe7e4c7f995c728c554ae20ddfc4244cad10aef255e72b62930afd233d1
   languageName: node
   linkType: hard
 
@@ -4627,7 +4629,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colors@npm:1.4.0, colors@npm:^1.4.0":
+"colors@npm:1.4.0":
   version: 1.4.0
   resolution: "colors@npm:1.4.0"
   checksum: 98aa2c2418ad87dedf25d781be69dc5fc5908e279d9d30c34d8b702e586a0474605b3a189511482b9d5ed0d20c867515d22749537f7bc546256c6014f3ebdcec
@@ -4643,7 +4645,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.11.0, commander@npm:^2.12.1, commander@npm:~2.20.0":
+"commander@npm:^2.11.0, commander@npm:^2.12.1":
   version: 2.20.0
   resolution: "commander@npm:2.20.0"
   checksum: 7f7ad57277e7a42e6931c0016e57ee1c14c3d2cf88aeff53c0c4d995a1a90ba33aa8bbff1cde1f92578b495e85c23aac7964c8f06322b9667b8b6e9ff9ceeca8
@@ -6900,18 +6902,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "fs-extra@npm:9.0.1"
-  dependencies:
-    at-least-node: ^1.0.0
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^1.0.0
-  checksum: 0110da06b4def68f2ed0343c0df518d6a3699373b826dc1848bdd18cea5e30ac282a412ff58b459c2a38f280301a31ce42a585c5f0506b412fe5259680876ccf
-  languageName: node
-  linkType: hard
-
 "fs-minipass@npm:^1.2.5":
   version: 1.2.6
   resolution: "fs-minipass@npm:1.2.6"
@@ -7233,7 +7223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.0.3, glob@npm:^7.0.6, glob@npm:^7.1.1, glob@npm:^7.1.3":
+"glob@npm:^7.0.3, glob@npm:^7.0.6, glob@npm:^7.1.1, glob@npm:^7.1.3":
   version: 7.1.4
   resolution: "glob@npm:7.1.4"
   dependencies:
@@ -7423,18 +7413,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gulp-typedoc@npm:^2.2.9":
-  version: 2.2.9
-  resolution: "gulp-typedoc@npm:2.2.9"
+"gulp-typedoc@npm:^3.0.0":
+  version: 3.0.2
+  resolution: "gulp-typedoc@npm:3.0.2"
   dependencies:
     ansi-colors: ^4.1.1
     event-stream: ^4.0.1
     fancy-log: ^1.3.3
     plugin-error: ^1.0.1
-    semver: ^7.3.2
+    semver: ^7.3.5
   peerDependencies:
-    typedoc: ">=0.3.9"
-  checksum: e1f4a9ad95c2720e4c7d721d5eb0d776f0fd92493793bb92131de2fb23a555427d540b236fa72f1576f117e4a856320416a1d6cdf1b7f768da74bef446cbd871
+    typedoc: ">=0.20.34"
+  checksum: 2812cf6b52451010879b755c2fed825cc966585aab09237ee14e7a08ee98f0fe1be63b69b65dff4ed3b79c59f04a7a60b134173f000658d06cf36b648c5b4054
   languageName: node
   linkType: hard
 
@@ -7465,24 +7455,6 @@ __metadata:
   version: 2.0.0
   resolution: "handle-thing@npm:2.0.0"
   checksum: bb6a33ec17a36a9fca92c8f98b0208dca4b5659253d77a2db7d31a0bad467d01f94e59444e226b6d35877226516176f069501c01d847047e1abcbe303363070f
-  languageName: node
-  linkType: hard
-
-"handlebars@npm:^4.7.6":
-  version: 4.7.6
-  resolution: "handlebars@npm:4.7.6"
-  dependencies:
-    minimist: ^1.2.5
-    neo-async: ^2.6.0
-    source-map: ^0.6.1
-    uglify-js: ^3.1.4
-    wordwrap: ^1.0.0
-  dependenciesMeta:
-    uglify-js:
-      optional: true
-  bin:
-    handlebars: bin/handlebars
-  checksum: 6fb9ba14c703cb6e77d5a1dcb37631126d25ae1503834b9b4f151d5324b52192a618d1944badc351588271cc28a8144093f85dbabc8c72278cfa2dbd09c70124
   languageName: node
   linkType: hard
 
@@ -8121,7 +8093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"interpret@npm:^1.0.0, interpret@npm:^1.1.0":
+"interpret@npm:^1.1.0":
   version: 1.2.0
   resolution: "interpret@npm:1.2.0"
   checksum: 85d5db9a4579f296ec9e63d38b38c768dc33db7ea0c63d5312131b23ffeee9fb8c6021db22dd0b2827030f6214a512e658a319a56ad446f487c6b1fce8b67edd
@@ -8918,7 +8890,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.1.0, json5@npm:^2.1.2":
+"json5@npm:^2.1.2":
   version: 2.1.3
   resolution: "json5@npm:2.1.3"
   dependencies:
@@ -8938,7 +8910,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-parser@npm:3.0.0":
+"jsonc-parser@npm:3.0.0, jsonc-parser@npm:^3.0.0":
   version: 3.0.0
   resolution: "jsonc-parser@npm:3.0.0"
   checksum: 1df2326f1f9688de30c70ff19c5b2a83ba3b89a1036160da79821d1361090775e9db502dc57a67c11b56e1186fc1ed70b887f25c5febf9a3ec4f91435836c99d
@@ -9408,7 +9380,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.19, lodash@npm:^4.17.20":
+"lodash@npm:^4.17.19":
   version: 4.17.20
   resolution: "lodash@npm:4.17.20"
   checksum: b31afa09739b7292a88ec49ffdb2fcaeb41f690def010f7a067eeedffece32da6b6847bfe4d38a77e6f41778b9b2bca75eeab91209936518173271f0b69376ea
@@ -9633,12 +9605,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^1.2.5":
-  version: 1.2.8
-  resolution: "marked@npm:1.2.8"
+"marked@npm:^4.0.12":
+  version: 4.0.14
+  resolution: "marked@npm:4.0.14"
   bin:
-    marked: bin/marked
-  checksum: c32427b7fe687b1823eef2f72cfd7709f8a0806f8d1c5c629995568779cc4dc976ca1216eceb8f36f0b171c9f5dcf8641f00c582c989cee84814031211b883bf
+    marked: bin/marked.js
+  checksum: 778bc2fc94c51ae4fbafe5a08bc1f3917799c4dd39e9fccd972a97df4e5bc5aa78664b7143d12d4b4969608fb90c6a2de3f19811a2f9ccf6b7f207022f2842ba
   languageName: node
   linkType: hard
 
@@ -9897,12 +9869,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:3.0.4, minimatch@npm:^3.0.0, minimatch@npm:^3.0.3, minimatch@npm:^3.0.4":
+"minimatch@npm:3.0.4, minimatch@npm:^3.0.3, minimatch@npm:^3.0.4":
   version: 3.0.4
   resolution: "minimatch@npm:3.0.4"
   dependencies:
     brace-expansion: ^1.1.7
   checksum: 66ac295f8a7b59788000ea3749938b0970344c841750abd96694f80269b926ebcafad3deeb3f1da2522978b119e6ae3a5869b63b13a7859a456b3408bd18a078
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "minimatch@npm:5.0.1"
+  dependencies:
+    brace-expansion: ^2.0.1
+  checksum: b34b98463da4754bc526b244d680c69d4d6089451ebe512edaf6dd9eeed0279399cfa3edb19233513b8f830bf4bfcad911dddcdf125e75074100d52f724774f0
   languageName: node
   linkType: hard
 
@@ -10263,7 +10244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"neo-async@npm:^2.5.0, neo-async@npm:^2.6.0":
+"neo-async@npm:^2.5.0":
   version: 2.6.1
   resolution: "neo-async@npm:2.6.1"
   checksum: 8a675256aec19ec2341c445f9b43183af3fd5a461b396ec75b43f3ad4f078a0e146c99433830a25e30d726fd9e4e1688a14babe5021fea5a2aaab4163bd8a653
@@ -10889,15 +10870,6 @@ __metadata:
   dependencies:
     mimic-fn: ^2.1.0
   checksum: 2478859ef817fc5d4e9c2f9e5728512ddd1dbc9fb7829ad263765bb6d3b91ce699d6e2332eef6b7dff183c2f490bd3349f1666427eaba4469fba0ac38dfd0d34
-  languageName: node
-  linkType: hard
-
-"onigasm@npm:^2.2.5":
-  version: 2.2.5
-  resolution: "onigasm@npm:2.2.5"
-  dependencies:
-    lru-cache: ^5.1.1
-  checksum: 97aedde610ef561f05853609d6a5b720ec1e123f867bdac1b38b5aeb3bc90ed60209678c75a5f0f9821aa793c720b6d17aabfb956e26ab115ee9b81d6e56bdf7
   languageName: node
   linkType: hard
 
@@ -12367,13 +12339,6 @@ __metadata:
   version: 0.11.10
   resolution: "process@npm:0.11.10"
   checksum: bfcce49814f7d172a6e6a14d5fa3ac92cc3d0c3b9feb1279774708a719e19acd673995226351a082a9ae99978254e320ccda4240ddc474ba31a76c79491ca7c3
-  languageName: node
-  linkType: hard
-
-"progress@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "progress@npm:2.0.3"
-  checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
   languageName: node
   linkType: hard
 
@@ -13865,47 +13830,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shelljs@npm:^0.8.4":
-  version: 0.8.4
-  resolution: "shelljs@npm:0.8.4"
+"shiki@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "shiki@npm:0.10.1"
   dependencies:
-    glob: ^7.0.0
-    interpret: ^1.0.0
-    rechoir: ^0.6.2
-  bin:
-    shjs: bin/shjs
-  checksum: 27f83206ef6a4f5b74a493726c3e6b4c3e07a9c2aac94c5e692d800a61353c18a8234967bd8523b1346abe718beb563843687fb57f466529ba06db3cae6f0bb3
-  languageName: node
-  linkType: hard
-
-"shiki-languages@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "shiki-languages@npm:0.2.7"
-  dependencies:
-    vscode-textmate: ^5.2.0
-  checksum: 40bd273cb002a8453680be2bceba847c7bbd2bef9e32a7293b9714257e05b8d033565ca0479654c7e1dbf121f8cd29be7ce2ee7c40555e5aa316d82cdc674004
-  languageName: node
-  linkType: hard
-
-"shiki-themes@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "shiki-themes@npm:0.2.7"
-  dependencies:
-    json5: ^2.1.0
-    vscode-textmate: ^5.2.0
-  checksum: cfb318c3b78421d94ca8ceab1009c70fea8be5d7528bc36a4e982dc162f36851fde209ef3bb52971c323606197f5791f1d2b38ad0bd19d253222c63a4f71acce
-  languageName: node
-  linkType: hard
-
-"shiki@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "shiki@npm:0.2.7"
-  dependencies:
-    onigasm: ^2.2.5
-    shiki-languages: ^0.2.7
-    shiki-themes: ^0.2.7
-    vscode-textmate: ^5.2.0
-  checksum: 8b3f687501c3f68639e4c975dd71181666b71b8e85b82c6cb47c19b5d4440ad3cc8e02a8f7f18f5b7c2497c6bc52371147469fea4e61bcf779254134e25c8748
+    jsonc-parser: ^3.0.0
+    vscode-oniguruma: ^1.6.1
+    vscode-textmate: 5.2.0
+  checksum: fb746f3cb3de7e545e3b10a6cb658d3938f840e4ccc9a3c90ceb7e69a8f89dbb432171faac1e9f02a03f103684dad88ee5e54b5c4964fa6b579fca6e8e26424d
   languageName: node
   linkType: hard
 
@@ -15321,33 +15253,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc-default-themes@npm:^0.12.5":
-  version: 0.12.5
-  resolution: "typedoc-default-themes@npm:0.12.5"
-  checksum: 1bd7a4d6aa901858ca3e5ba439adbd772ac95d83e60f728a14427455ba00eac56b8646a4195fc1dd7a7dfd69a2443608a284554632bbdbc3a655748b5a7938ae
-  languageName: node
-  linkType: hard
-
-"typedoc@npm:^0.20.19":
-  version: 0.20.19
-  resolution: "typedoc@npm:0.20.19"
+"typedoc@npm:^0.22.0":
+  version: 0.22.15
+  resolution: "typedoc@npm:0.22.15"
   dependencies:
-    colors: ^1.4.0
-    fs-extra: ^9.0.1
-    handlebars: ^4.7.6
-    lodash: ^4.17.20
+    glob: ^7.2.0
     lunr: ^2.3.9
-    marked: ^1.2.5
-    minimatch: ^3.0.0
-    progress: ^2.0.3
-    shelljs: ^0.8.4
-    shiki: ^0.2.7
-    typedoc-default-themes: ^0.12.5
+    marked: ^4.0.12
+    minimatch: ^5.0.1
+    shiki: ^0.10.1
   peerDependencies:
-    typescript: 3.9.x || 4.0.x || 4.1.x
+    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x || 4.5.x || 4.6.x
   bin:
     typedoc: bin/typedoc
-  checksum: caf9cfcd7e0cdcf52763146610af10ae13c7aa391e1febd4d4c9c766fe7568805e1c2c18609aac96a82807224fee15140770cdc75e1d164d0545f343b07b1935
+  checksum: 3f5f1cb9288bf811f42df59750c7062a026a23257b38dfe227515a30007a28e3d8139187949fcd19300fd6b2ef76bcdc4cf54549100bff3e000e61bb19958fb2
   languageName: node
   linkType: hard
 
@@ -15395,18 +15314,6 @@ __metadata:
   version: 0.7.31
   resolution: "ua-parser-js@npm:0.7.31"
   checksum: e2f8324a83d1715601576af85b2b6c03890699aaa7272950fc77ea925c70c5e4f75060ae147dc92124e49f7f0e3d6dd2b0a91e7f40d267e92df8894be967ba8b
-  languageName: node
-  linkType: hard
-
-"uglify-js@npm:^3.1.4":
-  version: 3.5.15
-  resolution: "uglify-js@npm:3.5.15"
-  dependencies:
-    commander: ~2.20.0
-    source-map: ~0.6.1
-  bin:
-    uglifyjs: bin/uglifyjs
-  checksum: 936697597b5887cca2703ab0b41be8931010246867f96785b2328f40367865d3a41bca0308ce93f0c3e8a6e42f39f33b10693613b5018d2f24bfaf9f4742ba91
   languageName: node
   linkType: hard
 
@@ -15872,7 +15779,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vscode-textmate@npm:^5.2.0":
+"vscode-oniguruma@npm:^1.6.1":
+  version: 1.6.2
+  resolution: "vscode-oniguruma@npm:1.6.2"
+  checksum: 6b754acdafd5b68242ea5938bb00a32effc16c77f471d4f0f337d879d0e8e592622998e2441f42d9a7ff799c1593f31c11f26ca8d9bf9917e3ca881d3c1f3e19
+  languageName: node
+  linkType: hard
+
+"vscode-textmate@npm:5.2.0":
   version: 5.2.0
   resolution: "vscode-textmate@npm:5.2.0"
   checksum: 5449b42d451080f6f3649b66948f4b5ee4643c4e88cfe3558a3b31c84c78060cfdd288c4958c1690eaa5cd65d09992fa6b7c3bef9d4aa72b3651054a04624d20
@@ -16213,13 +16127,6 @@ __metadata:
   version: 2.0.0
   resolution: "wildcard@npm:2.0.0"
   checksum: 1f4fe4c03dfc492777c60f795bbba597ac78794f1b650d68f398fbee9adb765367c516ebd4220889b6a81e9626e7228bbe0d66237abb311573c2ee1f4902a5ad
-  languageName: node
-  linkType: hard
-
-"wordwrap@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "wordwrap@npm:1.0.0"
-  checksum: 2a44b2788165d0a3de71fd517d4880a8e20ea3a82c080ce46e294f0b68b69a2e49cff5f99c600e275c698a90d12c5ea32aff06c311f0db2eb3f1201f3e7b2a04
   languageName: node
   linkType: hard
 
