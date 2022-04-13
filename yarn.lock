@@ -1919,27 +1919,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngrx/store-devtools@npm:^12.0.0":
-  version: 12.5.1
-  resolution: "@ngrx/store-devtools@npm:12.5.1"
+"@ngrx/store-devtools@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@ngrx/store-devtools@npm:13.1.0"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
-    "@ngrx/store": 12.5.1
-    rxjs: ^6.5.3 || ^7.0.0
-  checksum: e4256c10f73a09eda96f6caeb0788485d2fe4516b2374d5b31739711e76d12fa23d256be3e3a1c97411853bc06f3c4dee25fef30aef4b7cf269e238def7ea997
+    "@ngrx/store": 13.1.0
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: e246e73cbe17294a99451800ad9a257c26cebb087ea5433d78ace544881cd1995e0c5668670a0d037fd340e9ba607d1a6595dd462b4471e281eba7085ec830b2
   languageName: node
   linkType: hard
 
-"@ngrx/store@npm:^12.0.0":
-  version: 12.5.1
-  resolution: "@ngrx/store@npm:12.5.1"
+"@ngrx/store@npm:^13.1.0":
+  version: 13.1.0
+  resolution: "@ngrx/store@npm:13.1.0"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
-    "@angular/core": ^12.0.0
-    rxjs: ^6.5.3 || ^7.0.0
-  checksum: b3a47cfee32b55e4a52a5b621fc8e67ad0d94e8d0a6a9f9ee2ef11936004f6716af20e122ffd2a3fce072e9341cacda6abfa808fd985fabe933b727eae20ab0f
+    "@angular/core": ^13.0.0
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: 714235aab3685a54950fafcf57f8a0e38b17f6f08e8c9fc79b053880fc7111c990a60e43f751d6adf3fbf019f80f041c1c8e5fb3d3841e3b9b3ebf5d87fe1c7c
   languageName: node
   linkType: hard
 
@@ -2099,13 +2099,13 @@ __metadata:
     "@angular/platform-browser": ^13.3.2
     "@angular/platform-browser-dynamic": ^13.3.2
     "@angular/router": ^13.3.2
-    "@ngrx/store": ^12.0.0
-    "@ngrx/store-devtools": ^12.0.0
-    "@types/backbone": ^1.4.5
-    "@types/backbone.paginator": ^2.0.32
+    "@ngrx/store": ^13.1.0
+    "@ngrx/store-devtools": ^13.1.0
+    "@types/backbone": ^1.4.0
+    "@types/backbone.paginator": ^2.0.0
     "@types/jasmine": ~3.6.0
     "@types/node": ^12.11.1
-    "@types/underscore": ^1.10.22
+    "@types/underscore": ^1.11.0
     codelyzer: ^6.0.0
     core-js: ^3.6.5
     gulp: ^4.0.2
@@ -2205,12 +2205,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/backbone.paginator@npm:^2.0.32":
-  version: 2.0.32
-  resolution: "@types/backbone.paginator@npm:2.0.32"
+"@types/backbone.paginator@npm:^2.0.0":
+  version: 2.0.33
+  resolution: "@types/backbone.paginator@npm:2.0.33"
   dependencies:
     "@types/backbone": "*"
-  checksum: 9057b3966a465084fe7f431b49128275f40f880a792d2c0185c8f118485c4659d92fdafae7b2c7589eab7f2e4e07cfa2e9b208c1c31ca96b80d228855fc507a6
+  checksum: b74d51116aded8bdb2861aba7737e1e3bbe28deb4dd2106c685928edd5c0071fb1898a397b5c2be95b3f897cbed299a00a74ef65fa7ab86a7f4f4cac5538e029
   languageName: node
   linkType: hard
 
@@ -2224,13 +2224,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/backbone@npm:^1.4.5":
-  version: 1.4.5
-  resolution: "@types/backbone@npm:1.4.5"
+"@types/backbone@npm:^1.4.0":
+  version: 1.4.15
+  resolution: "@types/backbone@npm:1.4.15"
   dependencies:
     "@types/jquery": "*"
     "@types/underscore": "*"
-  checksum: 46cc200b1cf4f68b0fcf83a208fa4745871d6db49c8ea5117264798f3dd09099378504d2e484fb3e2133f6ec19fb338b8c7104af19618a7ddc2d829514470940
+  checksum: 8c8a251b05df0e9bb62e1ee62179f3feca4c4f704a0e8d65093e23e2efc81fbf1ec4cdf804497f94ea9b333a3a8cd44d9b949fc5ed6c92bc525c9c31a93f93d9
   languageName: node
   linkType: hard
 
@@ -2517,10 +2517,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/underscore@npm:^1.10.22":
-  version: 1.10.22
-  resolution: "@types/underscore@npm:1.10.22"
-  checksum: b3faa190551faeab6dc16604d443c1ca33a9ba10599d0982a3f964440655ba33a3c9e781eddb364f5a55a53d9f2ed43d85f50cd3b746bf2476b83f6b0dff3b94
+"@types/underscore@npm:^1.11.0":
+  version: 1.11.4
+  resolution: "@types/underscore@npm:1.11.4"
+  checksum: db9f8486bc851b732259e51f42d62aad1ae2158be5724612dc125ece5f5d61c51447f9dea28284c2a0f79cb95e788d01cb5ce97709880019213e69fab0dd1696
   languageName: node
   linkType: hard
 
