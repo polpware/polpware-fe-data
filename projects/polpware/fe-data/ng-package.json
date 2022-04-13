@@ -2,8 +2,6 @@
     "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
     "dest": "../../../dist/polpware/fe-data",
     "lib": {
-        "entryFile": "src/public_api.ts",
-        "umdModuleIds": {
-        }
+        "entryFile": "src/public_api.ts"
     }
 }
