@@ -1845,23 +1845,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngrx/store-devtools@npm:^9.2":
-  version: 9.2.0
-  resolution: "@ngrx/store-devtools@npm:9.2.0"
+"@ngrx/store-devtools@npm:^10.0.0":
+  version: 10.1.2
+  resolution: "@ngrx/store-devtools@npm:10.1.2"
+  dependencies:
+    tslib: ^2.0.0
   peerDependencies:
-    "@ngrx/store": 9.2.0
+    "@ngrx/store": 10.1.2
     rxjs: ^6.5.3
-  checksum: 7cece05cb800cadebf414943217234b1019aeba1a571443d9efab826123a567d14d864dfef5abfdbc6f27efb257048ae2ab0e7b4ec4424880e0ed7b13448558e
+  checksum: 22ff8381f089627fdf804a5077ae01bf74943749cbe300720d47943b553c7f1d039f092d82dcb29fb254e210da99613a42694f0ae2f64458cdde579fafb02097
   languageName: node
   linkType: hard
 
-"@ngrx/store@npm:^9.2":
-  version: 9.2.0
-  resolution: "@ngrx/store@npm:9.2.0"
+"@ngrx/store@npm:^10.0.0":
+  version: 10.1.2
+  resolution: "@ngrx/store@npm:10.1.2"
+  dependencies:
+    tslib: ^2.0.0
   peerDependencies:
-    "@angular/core": ^9.0.0
+    "@angular/core": ^10.0.0
     rxjs: ^6.5.3
-  checksum: 63ec610980093befb60bd7f69664fa5066767ff32d42528b9fe1661620f3ee221cbe6c9070ca98f6c131a02129cd6a21d7f17c303b1ebb203dd00f027765c3e2
+  checksum: 8e68b39f321d51a2663a9325ac307bd4cf70efe6b5d76a7c386ee849bc4c60cf32938d3d3361d81faf7327c03c765692b900238ac2c6110d066e90c2f934c0b7
   languageName: node
   linkType: hard
 
@@ -1970,8 +1974,8 @@ __metadata:
     "@angular/platform-browser": ^10.2.5
     "@angular/platform-browser-dynamic": ^10.2.5
     "@angular/router": ^10.2.5
-    "@ngrx/store": ^9.2
-    "@ngrx/store-devtools": ^9.2
+    "@ngrx/store": ^10.0.0
+    "@ngrx/store-devtools": ^10.0.0
     "@types/backbone": ^1.4.5
     "@types/backbone.paginator": ^2.0.32
     "@types/jasmine": 3.5.14
@@ -2001,10 +2005,6 @@ __metadata:
     typedoc: ^0.20.19
     typescript: 4.0.8
     zone.js: ~0.10.2
-  peerDependencies:
-    "@polpware/fe-dependencies": "*"
-    "@polpware/fe-utilities": "*"
-    polpware-tinymce-tailor: "*"
   languageName: unknown
   linkType: soft
 
