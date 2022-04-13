@@ -2096,27 +2096,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngrx/store-devtools@npm:^11.0.0":
-  version: 11.1.1
-  resolution: "@ngrx/store-devtools@npm:11.1.1"
+"@ngrx/store-devtools@npm:^12.0.0":
+  version: 12.5.1
+  resolution: "@ngrx/store-devtools@npm:12.5.1"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
-    "@ngrx/store": 11.1.1
-    rxjs: ^6.5.3
-  checksum: 23d87ddd52840e72a3c5cbef7afe249ad68248af56f9f42368e70583fc36a203d9a125f5c61df93d52c486289a277f2db22e269a92f022c909acc45713694329
+    "@ngrx/store": 12.5.1
+    rxjs: ^6.5.3 || ^7.0.0
+  checksum: e4256c10f73a09eda96f6caeb0788485d2fe4516b2374d5b31739711e76d12fa23d256be3e3a1c97411853bc06f3c4dee25fef30aef4b7cf269e238def7ea997
   languageName: node
   linkType: hard
 
-"@ngrx/store@npm:^11.0.0":
-  version: 11.1.1
-  resolution: "@ngrx/store@npm:11.1.1"
+"@ngrx/store@npm:^12.0.0":
+  version: 12.5.1
+  resolution: "@ngrx/store@npm:12.5.1"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
-    "@angular/core": ^11.0.0
-    rxjs: ^6.5.3
-  checksum: 809fd72ecb495a4b4f5a04fdcce26192eeda455d587c345f3659ebc44e2318f91748e7e319b18141e9a0692607b2051c843bc9af3c2082e2a09bb96409efab6b
+    "@angular/core": ^12.0.0
+    rxjs: ^6.5.3 || ^7.0.0
+  checksum: b3a47cfee32b55e4a52a5b621fc8e67ad0d94e8d0a6a9f9ee2ef11936004f6716af20e122ffd2a3fce072e9341cacda6abfa808fd985fabe933b727eae20ab0f
   languageName: node
   linkType: hard
 
@@ -2276,8 +2276,8 @@ __metadata:
     "@angular/platform-browser": ^12.2.16
     "@angular/platform-browser-dynamic": ^12.2.16
     "@angular/router": ^12.2.16
-    "@ngrx/store": ^11.0.0
-    "@ngrx/store-devtools": ^11.0.0
+    "@ngrx/store": ^12.0.0
+    "@ngrx/store-devtools": ^12.0.0
     "@types/backbone": ^1.4.5
     "@types/backbone.paginator": ^2.0.32
     "@types/jasmine": ~3.6.0
