@@ -1,16 +1,16 @@
 {
     "name": "@polpware/fe-data",
-    "version": "9.1.2",
+    "version": "13.0.0",
     "dependencies": {
       "tslib": "^2.0.0"
     },
     "peerDependencies": {
-        "@angular/common": "^9.0.0",
-        "@angular/core": "^9.0.0",
-        "@ngrx/store": "^9.0.0",
-        "@ngrx/store-devtools": "^9.0.0",
-        "@polpware/fe-dependencies": "^1.5.0",
-        "@polpware/fe-utilities": "^9.0.0",
+        "@angular/common": "^13.0.0",
+        "@angular/core": "^13.0.0",
+        "@ngrx/store": "^13.0.0",
+        "@ngrx/store-devtools": "^13.0.0",
+        "@polpware/fe-dependencies": "^1.6.0",
+        "@polpware/fe-utilities": "^13.0.0",
         "polpware-tinymce-tailor": "^4.7.0"
     }
 }
