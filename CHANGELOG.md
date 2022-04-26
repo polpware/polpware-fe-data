@@ -1,3 +1,25 @@
+## 13.0.0 (April 26, 2022)
+  - Script
+  - Update project dependencies
+  - Update script
+  - Fix package dependencies
+  - Update yarn
+  - Upgrade ngrx store and other dependencies
+  - Upgrade to ngx 13
+  - Upgrade ngrx store to 12
+  - Default to be production
+  - Upgradge to ngx 12
+  - Upgrade typedoc
+  - Upgrade ngrx to 11
+  - Upgrade to ngx 11
+  - Upgrade ngrx to 10.0
+  - Remmove some deps
+  - Upgrade to ng10
+  - Switch to new version of yarn
+  - k
+  - Upgrade packages
+  - Update version
+
 ## 9.1.2 (January 27, 2021)
   - Fix dependencies
   - k
