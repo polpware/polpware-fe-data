@@ -15,13 +15,15 @@ describe('ngx store add', () => {
     const q = p.select('collection');
 
     it('add', (done) => {
-        const subscribeId = q.subscribe(m => {
+        let subscribeId = null;
+        subscribeId = q.subscribe(m => {
             if (m.items.length < 1) {
                 return;
             }
             expect(m.items.length).toBe(1);
 
-            subscribeId.unsubscribe();
+            subscribeId && subscribeId.unsubscribe();
+
             done();
         });
         p.dispatch({
@@ -52,13 +54,14 @@ describe('ngx store remove', () => {
 
 
     it('remove ...', (done) => {
-        const subscribeId = q.subscribe(m => {
+        let subscribeId = null;
+        subscribeId = q.subscribe(m => {
             if (m.items.length > 0) {
                 return;
             }
             expect(m.items.length).toBe(0);
 
-            subscribeId.unsubscribe();
+            subscribeId && subscribeId.unsubscribe();
             done();
         });
         p.dispatch({
@@ -74,7 +77,7 @@ describe('ngx store remove', () => {
 });
 
 
-describe('ngx store remove', () => {
+describe('ngx store isolation', () => {
 
     const pp = factory();
     const qq = pp.select('collection');
@@ -95,12 +98,12 @@ describe('ngx store remove', () => {
     });
 
 
-    it('remove ...', (done) => {
-        const subscribeId = qq.subscribe(m => {
+    it('Add to b but check a', (done) => {
+        let subscribeId = null;
+        subscribeId = qq.subscribe(m => {
             expect(m.items.length).toBe(0);
-            if (subscribeId) {
-                subscribeId.unsubscribe();
-            }
+
+            subscribeId && subscribeId.unsubscribe();
 
             done();
         });
