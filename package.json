@@ -20,7 +20,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib": "ng build @polpware/fe-data",
+    "lib": "ng build --prod @polpware/fe-data",
     "doc": "gulp doc",
     "bump": "gulp bump"
   },
