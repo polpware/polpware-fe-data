@@ -1,59 +1,74 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "downlevelIteration": true,
-    "module": "es2020",
-    "outDir": "./dist/out-tsc",
-    "baseUrl": "./",
-    "paths": {
-      "jquery": [
-        "./node_modules/jquery/dist/jquery.js"
-      ],
-      "locache": [
-        "./node_modules/locache/build/locache.js"
-      ],
-      "meld": [
-        "./node_modules/meld/meld.js"
-      ],
-      "when": [
-        "./node_modules/when/when.js"
-      ],
-      "backbone": [
-        "./node_modules/backbone/backbone.js"
-      ],
-      "backbone-paginator": [
-        "./node_modules/backbone.paginator/lib/backbone.paginator.js"
-      ],
-      "underscore": [
-        "./node_modules/underscore/underscore.js"
-      ],
-      "constraintjs": [
-        "./node_modules/constraintjs/build/cjs.js"
-      ],
-      "data-flow": [
-        "./node_modules/model-js/dist/model.js"
-      ],
-      "state-machine": [
-        "./node_modules/@polpware/fe-dependencies/dummy.js"
-      ],
-      "@polpware/fe-data": [
-        "dist/polpware/fe-data"
-      ],
-      "@polpware/fe-data/*": [
-        "dist/polpware/fe-data/*"
-      ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "paths": {
+            "jquery": [
+                "./node_modules/jquery/dist/jquery.js"
+            ],
+            "locache": [
+                "./node_modules/locache/build/locache.js"
+            ],
+            "meld": [
+                "./node_modules/meld/meld.js"
+            ],
+            "when": [
+                "./node_modules/when/when.js"
+            ],
+            "backbone": [
+                "./node_modules/backbone/backbone.js"
+            ],
+            "backbone-paginator": [
+                "./node_modules/backbone.paginator/lib/backbone.paginator.js"
+            ],
+            "underscore": [
+                "./node_modules/underscore/underscore.js"
+            ],
+            "constraintjs": [
+                "./node_modules/constraintjs/build/cjs.js"
+            ],
+            "data-flow": [
+                "./node_modules/model-js/dist/model.js"
+            ],
+            "state-machine": [
+                "./node_modules/@polpware/fe-dependencies/dummy.js"
+            ],
+            "@polpware/fe-data": [
+                "dist/polpware/fe-data"
+            ],
+            "@polpware/fe-data/*": [
+                "dist/polpware/fe-data/*"
+            ]
+        },
+        "baseUrl": "./",        
+        "outDir": "./dist/out-tsc",
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "noImplicitAny": false,
+        "noImplicitThis": false,      
+        "noImplicitOverride": false,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitReturns": false,
+        "noFallthroughCasesInSwitch": true,
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,      
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "importHelpers": true,        
+        "target": "es2017",
+        "module": "es2020",        
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2020",
+            "dom"
+        ]
     },
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2016",
-      "dom"
-    ]
-  }
+    "angularCompilerOptions": {
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "strictTemplates": true
+    }
 }

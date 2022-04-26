@@ -1,166 +1,165 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
-  "newProjectRoot": "projects",
-  "projects": {
-    "fe-data-host": {
-      "root": "",
-      "sourceRoot": "host",
-      "projectType": "application",
-      "prefix": "",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "css"
-        }
-      },
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/fe-data-host",
-            "index": "host/index.html",
-            "main": "host/main.ts",
-            "tsConfig": "host/tsconfig.app.json",
-            "polyfills": "host/polyfills.ts",
-            "assets": [
-              "host/assets",
-              "host/favicon.ico"
-            ],
-            "styles": [
-              "host/styles.css"
-            ],
-            "scripts": [],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
-          },
-          "configurations": {
-            "production": {
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "host/environments/environment.ts",
-                  "with": "host/environments/environment.prod.ts"
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "fe-data-host": {
+            "projectType": "application",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "css"
                 }
-              ],
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+            },
+            "root": "",
+            "sourceRoot": "host",
+            "prefix": "",        
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/fe-data-host",
+                        "index": "host/index.html",
+                        "main": "host/main.ts",
+                        "tsConfig": "host/tsconfig.app.json",
+                        "polyfills": "host/polyfills.ts",
+                        "assets": [
+                            "host/assets",
+                            "host/favicon.ico"
+                        ],
+                        "styles": [
+                            "host/styles.css"
+                        ],
+                        "scripts": [],
+                        "vendorChunk": true,
+                        "extractLicenses": false,
+                        "buildOptimizer": false,
+                        "sourceMap": true,
+                        "optimization": false,
+                        "namedChunks": true
+                    },
+                    "configurations": {
+                        "production": {
+                            "optimization": true,
+                            "outputHashing": "all",
+                            "sourceMap": false,
+                            "namedChunks": false,
+                            "extractLicenses": true,
+                            "vendorChunk": false,
+                            "buildOptimizer": true,
+                            "fileReplacements": [
+                                {
+                                "replace": "host/environments/environment.ts",
+                                "with": "host/environments/environment.prod.ts"
+                            }
+                            ],
+                            "budgets": [
+                                {
+                                "type": "initial",
+                                "maximumWarning": "2mb",
+                                "maximumError": "5mb"
+                            },
+                                {
+                                "type": "anyComponentStyle",
+                                "maximumWarning": "6kb"
+                            }
+                            ]
+                        },
+                        "development": {}
+                    },
+                    "defaultConfiguration": "production"
                 },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "fe-data-host:build:production"
+                        },
+                        "development": {
+                            "browserTarget": "fe-data-host:build:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "extract-i18n": {
+                    "builder": "@angular-devkit/build-angular:extract-i18n",
+                    "options": {
+                        "browserTarget": "fe-data-host:build"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "host/test.ts",
+                        "karmaConfig": "host/karma.conf.js",
+                        "polyfills": "host/polyfills.ts",
+                        "tsConfig": "host/tsconfig.spec.json",
+                        "scripts": [],
+                        "styles": [
+                            "host/styles.css"
+                        ],
+                        "assets": [
+                            "host/assets",
+                            "host/favicon.ico"
+                        ]
+                    }
                 }
-              ]
-            },
-            "development": {}
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "fe-data-host:build:production"
-            },
-            "development": {
-              "browserTarget": "fe-data-host:build:development"
             }
-          },
-          "defaultConfiguration": "development"
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "fe-data-host:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "host/test.ts",
-            "karmaConfig": "host/karma.conf.js",
-            "polyfills": "host/polyfills.ts",
-            "tsConfig": "host/tsconfig.spec.json",
-            "scripts": [],
-            "styles": [
-              "host/styles.css"
-            ],
-            "assets": [
-              "host/assets",
-              "host/favicon.ico"
-            ]
-          }
-        }
-      }
-    },
-    "fe-data-host-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "fe-data-host:serve:production"
-            },
-            "development": {
-              "devServerTarget": "fe-data-host:serve:development"
+        "fe-data-host-e2e": {
+            "root": "e2e/",
+            "projectType": "application",
+            "prefix": "",
+            "architect": {
+                "e2e": {
+                    "builder": "@angular-devkit/build-angular:protractor",
+                    "options": {
+                        "protractorConfig": "e2e/protractor.conf.js"
+                    },
+                    "configurations": {
+                        "production": {
+                            "devServerTarget": "fe-data-host:serve:production"
+                        },
+                        "development": {
+                            "devServerTarget": "fe-data-host:serve:development"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                }
             }
-          },
-          "defaultConfiguration": "development"
-        }
-      }
-    },
-    "@polpware/fe-data": {
-      "root": "projects/polpware/fe-data",
-      "sourceRoot": "projects/polpware/fe-data/src",
-      "projectType": "library",
-      "prefix": "polp-fe-data",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "tsConfig": "projects/polpware/fe-data/tsconfig.lib.json",
-            "project": "projects/polpware/fe-data/ng-package.json"
-          },
-            "configurations": {
-                "production": {
-                    "optimization": false,                  
-                    "aot": false
-                ,              "tsConfig": "projects/polpware/fe-data/tsconfig.lib.prod.json"
-},
-              "development": {}
-            },
-            "defaultConfiguration": "production"
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/polpware/fe-data/src/test.ts",
-            "tsConfig": "projects/polpware/fe-data/tsconfig.spec.json",
-            "karmaConfig": "projects/polpware/fe-data/karma.conf.js"
-          }
+        "@polpware/fe-data": {
+            "projectType": "library",            
+            "root": "projects/polpware/fe-data",
+            "sourceRoot": "projects/polpware/fe-data/src",
+            "prefix": "polp-fe-data",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "project": "projects/polpware/fe-data/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/polpware/fe-data/tsconfig.lib.prod.json"
+                        },
+                        "development": {
+                            "tsConfig": "projects/polpware/fe-data/tsconfig.lib.json"                            
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/polpware/fe-data/src/test.ts",
+                        "tsConfig": "projects/polpware/fe-data/tsconfig.spec.json",
+                        "karmaConfig": "projects/polpware/fe-data/karma.conf.js"
+                    }
+                }
+            }
         }
-      }
-    }
-  },
-  "defaultProject": "fe-data-host"
+    },
+    "defaultProject": "fe-data-host"
 }

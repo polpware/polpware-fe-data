@@ -54,15 +54,15 @@ export function observableDecorator<T extends { new(...args: any[]) }>(construct
             const self = this;
 
             // Prevent all events except the remove event after the instance has been removed
-            if (self.removed && name !== 'remove') {
+            if (self['removed'] && name !== 'remove') {
                 return null;
             }
 
             const newEvt = getEventDispatcher(self).fire(name, evt, bubble);
 
             // Bubble event up to parents
-            if (bubble !== false && self.parent) {
-                let parent = self.parent();
+            if (bubble !== false && self['parent']) {
+                let parent = self['parent']();
                 while (parent && !newEvt.isPropagationStopped()) {
                     parent.fire(name, newEvt, false);
                     parent = parent.parent();
