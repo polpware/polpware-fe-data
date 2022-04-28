@@ -2156,13 +2156,15 @@ __metadata:
   linkType: hard
 
 "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx13":
-  version: 9.4.1
-  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=394bc06faf3be21f4271afcdf80348a79d9a0a21"
+  version: 13.0.0
+  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=5a1648869ec4c4075189cb08382031bd19ac15aa"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
+    "@angular/common": ^13.2.0
+    "@angular/core": ^13.2.0
     moment: ^2.0.0
-  checksum: 874c4a734f31eb0ba6929c6a1b1495507bd102484b2dfbc0e7749a3173b985f6307fc362d58101f4a0094eca740e8a2348561d7b561dc2b585356a49018b0c10
+  checksum: 27f5a107bde19961e8e40431a20d11d0a2f0666580683e255420f38d23e1c7d412d4791395f4ac26fa84a6fec7730db225f84fb9dda5839e06e49e6d333392d6
   languageName: node
   linkType: hard
 
@@ -8658,7 +8660,7 @@ __metadata:
 "locache@https://github.com/polpware/locache.git":
   version: 0.5.0
   resolution: "locache@https://github.com/polpware/locache.git#commit=f93bb35868e541165de076d63bda399df6d83a08"
-  checksum: da2b181cdf084cf20dbcd3311d573225f4e0523a39d2a839806b88a71c2134629d1d60dbd42720e5ee250267297f499e4b3ff04e7b54e7ec0d759fa3333c86b5
+  checksum: c4d702b2a96e8f6b5ef456c5829a10b142a28dd5f64d456f66514a337c9d2e7fffc727292f51e97f446367f352982b889467ce287d8b41a772fcb1beda7bdcba
   languageName: node
   linkType: hard
 
