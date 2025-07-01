@@ -1,0 +1,32 @@
+#+TITLE: Dependencies 
+#+AUTHOR:    Polpware
+#+EMAIL:     polpware@gmail.com
+#+DATE:      \today
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER: \usepackage{graphics}
+#+LATEX_HEADER: \usepackage{sectsty,textcase}
+#+LATEX_HEADER: \usepackage{algorithm}
+#+LATEX_HEADER: \usepackage{algorithmic}
+#+LATEX_HEADER: \usepackage{syntax}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amsthm}
+#+LATEX_HEADER_EXTRA:
+#+DESCRIPTION:
+#+KEYWORDS:
+#+SUBTITLE:
+#+LATEX_COMPILER: pdflatex
+
+* External Dependency
+
+** All Libraries
+
+| Library                   | Pure JavaScript | Family |
+|---------------------------+-----------------+--------|
+| @ngrx/store               |                 | @ngrx  |
+| @ngrx/store-devtools      |                 |        |
+| @polpware/fe-dependencies |                 |        |
+| @polpware/fe-utilities    |                 |        |
+| polpware-tinymce-tailor   | Yes             |        |
+| moment                    | Yes             |        |
+
