@@ -2164,7 +2164,7 @@ __metadata:
     "@angular/common": ^13.2.0
     "@angular/core": ^13.2.0
     moment: ^2.0.0
-  checksum: 27f5a107bde19961e8e40431a20d11d0a2f0666580683e255420f38d23e1c7d412d4791395f4ac26fa84a6fec7730db225f84fb9dda5839e06e49e6d333392d6
+  checksum: 6863332af977b6dd80bde9310fb2b288b3adf2859a8282f2fe140c79df9cdec0eef70e793f8697b510ee2475826184558d5cae47d7255884d19a6f0976ff1895
   languageName: node
   linkType: hard
 
@@ -4457,7 +4457,7 @@ __metadata:
 "constraintjs@https://github.com/xlongtang/constraintjs.git":
   version: 0.9.7-beta
   resolution: "constraintjs@https://github.com/xlongtang/constraintjs.git#commit=7bcd08bd9fbd6596dd978b201410fab502873f4e"
-  checksum: b238dc90c146b17d10a07978d4ecad2b28983271a35445c55f0dd72f1f579e98ef2e81eda9eafa50a5b12349f4e0bd838ae65206dac896ba0dc59c9148b45eaa
+  checksum: 2950c9c6d1f5c8895b4eac4cd531b47de841cd031694d7010436b7fcbe96dae4c0218e32febd38aec9bb20e9bd048a4e0d80ed290172b09a3f57a1a16701f645
   languageName: node
   linkType: hard
 
@@ -8660,7 +8660,7 @@ __metadata:
 "locache@https://github.com/polpware/locache.git":
   version: 0.5.0
   resolution: "locache@https://github.com/polpware/locache.git#commit=f93bb35868e541165de076d63bda399df6d83a08"
-  checksum: c4d702b2a96e8f6b5ef456c5829a10b142a28dd5f64d456f66514a337c9d2e7fffc727292f51e97f446367f352982b889467ce287d8b41a772fcb1beda7bdcba
+  checksum: 42bf55a301b4bccda8f1e6e9f59a68aff56d20d1ba873f1f41ed656699f72f9e5c4b31f1d03768fa5e879549ec96afa193180b025ffe582f9b02adad1272180b
   languageName: node
   linkType: hard
 
@@ -10454,7 +10454,7 @@ __metadata:
 "polpware-tinymce-tailor@https://github.com/polpware-frontend-modules/polpware-tinymce-tailor.git":
   version: 4.7.9
   resolution: "polpware-tinymce-tailor@https://github.com/polpware-frontend-modules/polpware-tinymce-tailor.git#commit=704c9133520c75b57fd6e9a8d82e0f3e02340590"
-  checksum: 57a6ad715040373d3ac86fbc55f470be18e9f5165d7143e449e272b92495370d59cd7c366f1e89e0b533322e401139bfa2811c5f221cdb82cc2fa65c866af18c
+  checksum: a78063ede916c7de561170b924b6d9a6f8aefe5118f3eab1b0966dfdde52b13e138e90ff99d2dfdfd6d0a96f25450bf35d4c2d4fe3493ca54f72af2538b1ca91
   languageName: node
   linkType: hard
 
