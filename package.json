@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "@polpware/fe-data",
   "version": "13.0.0",
   "description": "A set of data construct, including memory relational database, ngrx store, memory cache, observable object, and so on",
@@ -38,8 +38,8 @@
     "@angular/platform-browser": "^14.3.0",
     "@angular/platform-browser-dynamic": "^14.3.0",
     "@angular/router": "^14.3.0",
-    "@ngrx/store": "^13.1.0",
-    "@ngrx/store-devtools": "^13.1.0",
+    "@ngrx/store": "^14.0.0",
+    "@ngrx/store-devtools": "^14.0.0",
     "@polpware/fe-dependencies": "https://github.com/polpware-frontend-modules/polpware-fe-dependencies.git",
     "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx13",
     "@types/jasmine": "~5.1.8",
