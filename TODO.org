@@ -3,9 +3,11 @@
     -  ng update ...
   - [ ] Update project-level package dependencies
     - fml.angular.update-deps -e develop ...
+  - [ ] Update custom libraries manually
   - [ ] Update library-level package dependencies
     - fml.angular.update-deps -e product ...
-
+  - [ ] Update custom libraries manually
+    
 * TODO Release 
   - [ ] bump-version
   - [ ] npm run bump
