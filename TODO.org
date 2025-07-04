@@ -1,4 +1,6 @@
 * TODO Update Angular
+  - [ ] New branch
+    - git branch ...
   - [ ] Angular Update
     -  ng update ...
   - [ ] Update project-level package dependencies
@@ -14,7 +16,7 @@
   - [ ] npm run bump
   - [ ] make prepare-ngx...
   - [ ] npm run test
-  - [ ] npm run lib/build
+  - [ ] npm run lib
   - [ ] make copy
   - [ ] make push
   
