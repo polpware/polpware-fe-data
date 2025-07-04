@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "@polpware/fe-data",
   "version": "14.0.0",
   "description": "A set of data construct, including memory relational database, ngrx store, memory cache, observable object, and so on",
