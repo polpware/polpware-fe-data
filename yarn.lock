@@ -2629,27 +2629,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ngrx/store-devtools@npm:^16.0.0":
-  version: 16.3.0
-  resolution: "@ngrx/store-devtools@npm:16.3.0"
+"@ngrx/store-devtools@npm:^17.0.0":
+  version: 17.2.0
+  resolution: "@ngrx/store-devtools@npm:17.2.0"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
-    "@ngrx/store": 16.3.0
+    "@ngrx/store": 17.2.0
     rxjs: ^6.5.3 || ^7.5.0
-  checksum: 05d978457e0dfa5fd3da574d2a79e4a7df3ce63e1cbc19e2741199bc4bebc782e9cf1d8ea02a9fc3540f56e0921f05a66b7dbc7b8bd1b84c8c81cb50a98b0b5f
+  checksum: 999674a60aa683b83116a973fe175caacd270130d2baeaecae23e8ffbb9bd0e2c3e69957a8331e4d223bb5bea9bc5c25499e3ecd6e9af8a3cf4cca802649a4ef
   languageName: node
   linkType: hard
 
-"@ngrx/store@npm:^16.0.0":
-  version: 16.3.0
-  resolution: "@ngrx/store@npm:16.3.0"
+"@ngrx/store@npm:^17.0.0":
+  version: 17.2.0
+  resolution: "@ngrx/store@npm:17.2.0"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
-    "@angular/core": ^16.0.0
+    "@angular/core": ^17.0.0
     rxjs: ^6.5.3 || ^7.5.0
-  checksum: e31319f2e072a8145bb5093a38a1f6bfc4b723286128ca46bb1e571c7efe25114bc7c6ca8b96c7544030f28847bf1c116880aa8f32af9e8a8659e0083fb9fbc0
+  checksum: 82cb77c42ae5149c98fd5c2104023d6606c62daba0180babdc1c1306f604bc39fed4ccaeba86bb3d90949b92c864a01ad3865953597f092f6138ed54ab560a9e
   languageName: node
   linkType: hard
 
@@ -10694,8 +10694,8 @@ __metadata:
     "@angular/platform-browser": ^17.3.12
     "@angular/platform-browser-dynamic": ^17.3.12
     "@angular/router": ^17.3.12
-    "@ngrx/store": ^16.0.0
-    "@ngrx/store-devtools": ^16.0.0
+    "@ngrx/store": ^17.0.0
+    "@ngrx/store-devtools": ^17.0.0
     "@polpware/fe-dependencies": "https://github.com/polpware-frontend-modules/polpware-fe-dependencies.git"
     "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx16"
     "@types/jasmine": ~5.1.8

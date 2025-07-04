@@ -6,9 +6,11 @@
   - [ ] Update project-level package dependencies
     - fml.angular.update-deps -e develop ...
   - [ ] Update custom libraries manually
+  - [ ] dos2unix package.json
   - [ ] Update library-level package dependencies
     - fml.angular.update-deps -e product ...
   - [ ] Update custom libraries manually
+  - [ ] dos2unix package.json    
   - [ ] yarn install
     
 * TODO Release 
