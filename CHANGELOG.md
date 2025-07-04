@@ -1,3 +1,11 @@
+## 17.0.0 (July 04, 2025)
+  - Updated dependencies for Angular 16
+  - Updated for Angular 17
+  - todo
+  - Publish 16
+  - toolchain
+  - Bumped version
+
 ## 16.0.0 (July 04, 2025)
   - Updated dependencies for Angular 16
   - Updated with Angular 16
