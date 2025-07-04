@@ -1,3 +1,11 @@
+## 16.0.0 (July 04, 2025)
+  - Updated dependencies for Angular 16
+  - Updated with Angular 16
+  - Publish version 15
+  - Updated packages
+  - toolchain
+  - Fixed toolchain
+
 ## 15.0.0 (July 04, 2025)
   - Updated dependencies
   - Procedure
