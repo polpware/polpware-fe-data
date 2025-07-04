@@ -1,3 +1,15 @@
+## 15.0.0 (July 04, 2025)
+  - Updated dependencies
+  - Procedure
+  - Updated to Angular 15
+  - k
+  - Removed inactive libs
+  - Publish Angular 14
+  - Fixed issues of the host applications
+  - Rename for conforming to Angular directory
+  - Updated packages
+  - Bumped version
+
 ## 14.0.0 (July 04, 2025)
   - Updated the dependencies for @polpware/fe-data
   - Bumped version
