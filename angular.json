@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "fe-data-host": {
+        "polpware-fe-data-host": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -11,13 +11,13 @@
                 }
             },
             "root": "",
-            "sourceRoot": "host",
-            "prefix": "",        
+            "sourceRoot": "src",
+            "prefix": "app",        
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/fe-data-host",
+                        "outputPath": "dist/polpware-fe-data-host",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "tsConfig": "src/tsconfig.app.json",
@@ -74,10 +74,10 @@
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "fe-data-host:build:production"
+                            "browserTarget": "polpware-fe-data-host:build:production"
                         },
                         "development": {
-                            "browserTarget": "fe-data-host:build:development"
+                            "browserTarget": "polpware-fe-data-host:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "fe-data-host:build"
+                        "browserTarget": "polpware-fe-data-host:build"
                     }
                 },
                 "test": {
@@ -107,7 +107,7 @@
                 }
             }
         },
-        "fe-data-host-e2e": {
+        "polpware-fe-data-host-e2e": {
             "root": "e2e/",
             "projectType": "application",
             "prefix": "",
@@ -119,10 +119,10 @@
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "fe-data-host:serve:production"
+                            "devServerTarget": "polpware-fe-data-host:serve:production"
                         },
                         "development": {
-                            "devServerTarget": "fe-data-host:serve:development"
+                            "devServerTarget": "polpware-fe-data-host:serve:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -133,7 +133,7 @@
             "projectType": "library",            
             "root": "projects/polpware/fe-data",
             "sourceRoot": "projects/polpware/fe-data/src",
-            "prefix": "polp-fe-data",
+            "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
