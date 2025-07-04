@@ -1,3 +1,20 @@
+## 14.0.0 (July 04, 2025)
+  - Updated the dependencies for @polpware/fe-data
+  - Bumped version
+  - k
+  - Updated packages
+  - Update Angular 14
+  - Build packages
+  - Updated submodule
+  - Dependency
+  - Fix dependencies
+  - k
+  - Fix testing
+  - Fix test
+  - Fix schema and dependencies
+  - k
+  - Bump version
+
 ## 13.0.0 (April 26, 2022)
   - Script
   - Update project dependencies
