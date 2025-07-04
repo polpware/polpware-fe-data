@@ -74,10 +74,10 @@
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "polpware-fe-data-host:build:production"
+                          "buildTarget": "polpware-fe-data-host:build:production"
                         },
                         "development": {
-                            "browserTarget": "polpware-fe-data-host:build:development"
+                          "buildTarget": "polpware-fe-data-host:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "polpware-fe-data-host:build"
+                      "buildTarget": "polpware-fe-data-host:build"
                     }
                 },
                 "test": {
