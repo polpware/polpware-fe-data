@@ -21,6 +21,10 @@ prepare-ngx15:
 	echo "Make sure that we are the ngx15 branch"
 	cd $(DeployTarget) && git checkout ngx15 && git pull
 
+prepare-ngx16:
+	echo "Make sure that we are the ngx16 branch"
+	cd $(DeployTarget) && git checkout ngx16 && git pull
+
 build:
 	echo "Build ..."
 	npm run lib
