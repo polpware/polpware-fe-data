@@ -1,0 +1,18 @@
+* TODO Update Angular
+  - [ ] Angular Update
+    -  ng update ...
+  - [ ] Update project-level package dependencies
+    - fml.angular.update-deps -e develop ...
+  - [ ] Update library-level package dependencies
+    - fml.angular.update-deps -e product ...
+
+* TODO Release 
+  - [ ] bump-version
+  - [ ] npm run bump
+  - [ ] make prepare-ngx...
+  - [ ] npm run test
+  - [ ] npm run lib/build
+  - [ ] make copy
+  - [ ] make push
+  
+  
