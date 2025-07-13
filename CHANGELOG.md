@@ -1,3 +1,8 @@
+## 14.0.2 (July 13, 2025)
+  - Fix package dependencies
+  - Publish 14.0.1
+  - Bump Version to 14.0.1
+
 ## 14.0.1 (July 13, 2025)
   - Fix package dependencies
   - Publish Angular 14
