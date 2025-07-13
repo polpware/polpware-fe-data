@@ -9,7 +9,7 @@
         "@angular/core": "^14.0.0",
         "@ngrx/store": "^14.0.0",
         "@ngrx/store-devtools": "^14.0.0",
-        "@polpware/fe-dependencies": "^14.0.0",
+        "@polpware/fe-dependencies": "^1.6.0",
         "@polpware/fe-utilities": "^14.0.0",
         "polpware-tinymce-tailor": "^4.7.0"
     }
