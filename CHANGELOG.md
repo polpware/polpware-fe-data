@@ -1,3 +1,11 @@
+## 19.0.0 (July 17, 2025)
+  - Install libs
+  - Update custom libs
+  - Update deps for Angular 19
+  - Update to Angular 19
+  - Publish Version 18
+  - Bump to Version 18.0.0
+
 ## 18.0.0 (July 17, 2025)
   - Set up eslint
   - Install libs
