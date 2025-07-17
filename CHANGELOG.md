@@ -1,3 +1,14 @@
+## 18.0.0 (July 17, 2025)
+  - Set up eslint
+  - Install libs
+  - Update toolchain
+  - Update deps for Angular 18
+  - Update to Angular 18
+  - Update tooltip
+  - Publish 17
+  - toolchain
+  - Bumped version
+
 ## 17.0.0 (July 04, 2025)
   - Updated dependencies for Angular 16
   - Updated for Angular 17
