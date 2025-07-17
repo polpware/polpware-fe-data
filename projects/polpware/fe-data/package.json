@@ -5,12 +5,12 @@
       "tslib": "^2.0.0"
     },
     "peerDependencies": {
-        "@angular/common": "^18.0.0",
-        "@angular/core": "^18.0.0",
-        "@ngrx/store": "^18.0.0",
-        "@ngrx/store-devtools": "^18.0.0",
+        "@angular/common": "^19.0.0",
+        "@angular/core": "^19.0.0",
+        "@ngrx/store": "^19.0.0",
+        "@ngrx/store-devtools": "^19.0.0",
         "@polpware/fe-dependencies": "^1.6.0",
-        "@polpware/fe-utilities": "^18.0.0",
+        "@polpware/fe-utilities": "^19.0.0",
         "polpware-tinymce-tailor": "^4.7.0"
     }
 }
