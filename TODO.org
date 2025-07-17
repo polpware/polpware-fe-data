@@ -12,6 +12,7 @@
   - [ ] Update custom libraries manually
   - [ ] dos2unix package.json    
   - [ ] yarn install
+  - [ ] ng add @angular-eslint/schematics
     
 * TODO Release 
   - [ ] bump-version
