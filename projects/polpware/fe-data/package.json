@@ -1,6 +1,6 @@
 {
     "name": "@polpware/fe-data",
-    "version": "17.0.0",
+    "version": "18.0.0",
     "dependencies": {
       "tslib": "^2.0.0"
     },
