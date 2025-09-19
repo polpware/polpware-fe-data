@@ -6,7 +6,10 @@
  * @author Xiaolong Tang <xxlongtang@gmail.com>
  * @license Copyright @me
  */
-import * as externalInterface from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+const _ = legacyLibs._;
+
 // as polyfill for localstorage
 // Do NOT use the LocalStorage as there is global variable which cannot be resolved
 // and which is defined only in TINYMCE.
@@ -21,8 +24,7 @@ import {
     ok as isType
 } from '@polpware/fe-utilities';
 
-const _ = externalInterface.underscore,
-    find = _.find,
+const find = _.find,
     findIndex = _.findIndex,
     union = _.union;
 

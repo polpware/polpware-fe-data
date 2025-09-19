@@ -26,7 +26,10 @@
 // sale, use or other dealings in this Software without prior written
 // authorization.
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+const locache = legacyLibs.locache;
+const meld = legacyLibs.meld;
 
 import { MemoryBackend } from './memory-backend';
 import { observableDecorator } from '../decorators/observable.decorator';
@@ -37,9 +40,6 @@ import { IJoinpoint } from '../interfaces/joint-point.interface';
 import { INgZoneLike } from '../interfaces/ng-zone-like.interface';
 
 import { ISlidingExpireCache } from './sliding-expire-cache.interface';
-
-const locache = dependencies.locache;
-const meld = dependencies.meld;
 
 const originalRemove = Object.getPrototypeOf(locache.locache).remove;
 

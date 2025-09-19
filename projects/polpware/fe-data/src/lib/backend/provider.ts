@@ -7,7 +7,11 @@
  */
 /*jslint unparam: true */
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+const DataFlow = legacyLibs.ModelJs;
+const backbone = legacyLibs.Backbone;
+const _ = legacyLibs._;
 
 import { urlEncode } from '@polpware/fe-utilities';
 
@@ -22,10 +26,6 @@ import {
 } from './event-hub';
 
 import { IBackboneOptions, IBackboneConfiguration } from './interfaces';
-
-const DataFlow = dependencies['dataflow'];
-const backbone = dependencies['backbone'];
-const _ = dependencies.underscore;
 
 /**
  * The endpoint types for a backend service.

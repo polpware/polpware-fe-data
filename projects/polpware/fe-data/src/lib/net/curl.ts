@@ -6,11 +6,11 @@
  * @author Xiaolong Tang <xxlongtang@gmail.com>
  * @license Copyright @me
  */
-import * as dependencies from '@polpware/fe-dependencies';
+import tools from '@polpware/tinymce-tailor/api/util/Tools';
 
-const tools = dependencies.Tools;
+import { legacyLibs } from '@polpware/amd-bridge';
 
-const $ = dependencies.jquery;
+const $ = legacyLibs.$;
 
 /**
  * Load a local json file from the given url.

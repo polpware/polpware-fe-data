@@ -5,7 +5,7 @@
  * @author Xiaolong Tang <xxlongtang@gmail.com>
  * @license Copyright @me
  */
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
 
 import { liftWithGuard } from '@polpware/fe-utilities';
 
@@ -13,7 +13,7 @@ import { IAntiForgeryKeyCtorOptions } from './interfaces';
 
 import { PolicyBase } from './policy-base';
 
-const $ = dependencies.jquery;
+const $ = legacyLibs.$;
 const defaultAntiForgeryKey = '__RequestVerificationToken';
 const defaultElementTag = '';
 

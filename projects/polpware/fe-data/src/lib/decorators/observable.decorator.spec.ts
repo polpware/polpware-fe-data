@@ -1,13 +1,9 @@
-import * as dependencies from '@polpware/fe-dependencies';
-
-const tools = dependencies.Tools;
+import tools from '@polpware/tinymce-tailor/api/util/Tools';
+import EventDispatcher from '@polpware/tinymce-tailor/api/util/EventDispatcher';
 
 import { Test } from './test-class.spec';
 
 import { IObservable } from '../interfaces/observable.interface';
-
-
-const EventDispatcher = dependencies.EventDispatcher;
 
 describe('event dispather', () => {
     it('loaded', () => {

@@ -18,8 +18,10 @@
  * @license Copyright @me
  */
 
+import { legacyLibs } from '@polpware/amd-bridge';
 
-import * as externalInterface from '@polpware/fe-dependencies';
+const _ = legacyLibs._;
+
 import { replace, lift, convert } from '@polpware/fe-utilities';
 
 import { ISlidingExpireCache } from '../cache/sliding-expire-cache.interface';
@@ -27,9 +29,7 @@ import { ISlidingExpireCache } from '../cache/sliding-expire-cache.interface';
 import { loadJsonUriP } from '../net/curl';
 
 
-const _ = externalInterface.underscore;
 const isString = _.isString;
-
 
 /**
  * Retrieves a value from a variable by a given namespace nested structure.
