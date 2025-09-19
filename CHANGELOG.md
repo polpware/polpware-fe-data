@@ -1,3 +1,10 @@
+## 19.1.0 (September 19, 2025)
+  - Adapt to ESModule
+  - Configure typescript
+  - Update package
+  - Publish Version 19
+  - Bump to Version 19
+
 ## 19.0.0 (July 17, 2025)
   - Install libs
   - Update custom libs
