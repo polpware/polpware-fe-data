@@ -1,3 +1,8 @@
+## 19.2.0 (September 21, 2025)
+  - Fix a potential issue
+  - Publish esm module
+  - Bump version
+
 ## 19.1.0 (September 19, 2025)
   - Adapt to ESModule
   - Configure typescript
