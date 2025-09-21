@@ -1,3 +1,9 @@
+## 19.3.0 (September 21, 2025)
+  - Update packages
+  - Publish new version
+  - Remove the use of when
+  - Bump version
+
 ## 19.2.0 (September 21, 2025)
   - Fix a potential issue
   - Publish esm module
