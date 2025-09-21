@@ -11,7 +11,6 @@
 
 import { legacyLibs } from '@polpware/amd-bridge';
 
-const when = legacyLibs.when;
 const _ = legacyLibs._;
 
 import { IBackboneCollectionLike } from '../interfaces/backbone.interface';
@@ -75,7 +74,7 @@ export class AggregateCollection {
                             return resp;
                         });
                 });
-                return when.settle(promises);
+                return Promise.all(promises);
             });
     }
 
