@@ -2,23 +2,8 @@
     "compileOnSave": false,
     "compilerOptions": {
       "paths": {
-        "jquery": [
-          "node_modules/jquery/dist/jquery.js"
-        ],
-        "locache": [
-          "node_modules/locache/build/locache.js"
-        ],
         "meld": [
           "node_modules/meld/meld.js"
-        ],
-        "when": [
-          "node_modules/when/when.js"
-        ],
-        "backbone": [
-          "node_modules/backbone/backbone.js"
-        ],
-        "backbone-paginator": [
-          "node_modules/backbone.paginator/lib/backbone.paginator.js"
         ],
         "underscore": [
           "node_modules/underscore/underscore.js"

@@ -3309,8 +3309,8 @@ __metadata:
   linkType: hard
 
 "@polpware/amd-bridge@https://github.com/polpware-frontend-modules/polpware-amd-bridge.git":
-  version: 2.4.0
-  resolution: "@polpware/amd-bridge@https://github.com/polpware-frontend-modules/polpware-amd-bridge.git#commit=9d756387dd0b5366ef9df05abb310b17f0894186"
+  version: 2.5.0
+  resolution: "@polpware/amd-bridge@https://github.com/polpware-frontend-modules/polpware-amd-bridge.git#commit=e275813e8d885ad45edcee26b62f3f22a0543ed5"
   dependencies:
     backbone: ^1.4.0
     backbone.paginator: ^2.0.8
@@ -3320,7 +3320,7 @@ __metadata:
     locache: "https://github.com/polpware/locache.git"
     meld: ^1.3.2
     model-js: ^0.2.5
-  checksum: 221259e51aa90d289677285ad3dcc47b96622f7f3c89146b8c86f44c48a3e7d79c45aba3ed068f22d5a473b504adcd138a03f37a8d16a560fd9c25059a0007a9
+  checksum: e420fc405831a4894b6d3343a8835f08a69d6b84c7a0b07f8869ee27a20a2f27c515547f5b16df5eabb7d82c962ee96403c5ca288159770bb2907eabac5b63f6
   languageName: node
   linkType: hard
 
@@ -4156,13 +4156,6 @@ __metadata:
   version: 1.13.0
   resolution: "@types/underscore@npm:1.13.0"
   checksum: 1411cbeb1b743629d504fcb2037b393d11eb207459b9d560f71304183115e30ba145f83b819ffcc8a0d5d4eccfb76bebb0ef7aab8f96a04d88d99ff9dfe503c6
-  languageName: node
-  linkType: hard
-
-"@types/when@npm:^2.4.41":
-  version: 2.4.41
-  resolution: "@types/when@npm:2.4.41"
-  checksum: e3517be8e5845c73ed52b04e50f5effbb5ef7f19cc579a7f016b8f282b6667e180a1cfa6d060a5a537bbc62a1b397fdf208045f0628a5935bed567c43462d462
   languageName: node
   linkType: hard
 
@@ -11340,7 +11333,6 @@ __metadata:
     "@types/jquery": ^3.5.33
     "@types/node": ^20.11.0
     "@types/underscore": ^1.13.0
-    "@types/when": ^2.4.41
     angular-eslint: ^19.0.0
     core-js: ^3.6.5
     eslint: ^9.0.0
