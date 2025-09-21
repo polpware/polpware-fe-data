@@ -3309,8 +3309,8 @@ __metadata:
   linkType: hard
 
 "@polpware/amd-bridge@https://github.com/polpware-frontend-modules/polpware-amd-bridge.git":
-  version: 2.0.0
-  resolution: "@polpware/amd-bridge@https://github.com/polpware-frontend-modules/polpware-amd-bridge.git#commit=003da586c208222ac213ec2cb053f3081097dbbf"
+  version: 2.4.0
+  resolution: "@polpware/amd-bridge@https://github.com/polpware-frontend-modules/polpware-amd-bridge.git#commit=9d756387dd0b5366ef9df05abb310b17f0894186"
   dependencies:
     backbone: ^1.4.0
     backbone.paginator: ^2.0.8
@@ -3320,8 +3320,7 @@ __metadata:
     locache: "https://github.com/polpware/locache.git"
     meld: ^1.3.2
     model-js: ^0.2.5
-    when: ^3.7.8
-  checksum: a490b05d2373c7ff432d4d98e2b3c676a6e6e918b8ebdcd9ed056108e4e4b7eb2e6687ccc2100e6d9245de1d6996ef83b635fc4b44434a2ce29a84ad8665b3b9
+  checksum: 221259e51aa90d289677285ad3dcc47b96622f7f3c89146b8c86f44c48a3e7d79c45aba3ed068f22d5a473b504adcd138a03f37a8d16a560fd9c25059a0007a9
   languageName: node
   linkType: hard
 
@@ -14295,13 +14294,6 @@ __metadata:
   version: 0.1.3
   resolution: "websocket-extensions@npm:0.1.3"
   checksum: 453d51465b7bad037da41621d32fa65f04396f7d6d4cfeb707a33f24c0d6610e1bf8eee5e83339150efb4d5bed344c54028a310e9019cad79f43d06b78d87bef
-  languageName: node
-  linkType: hard
-
-"when@npm:^3.7.8":
-  version: 3.7.8
-  resolution: "when@npm:3.7.8"
-  checksum: 1f7a3d4a125c61108c51a58b7e42350d290f0595c42fb864a38d403101b40ede28d29068c9f7a8c3e4e0128f2050f7cc68c7e82b3a39a9156f6929fc69bf42fb
   languageName: node
   linkType: hard
 
