@@ -1,3 +1,8 @@
+## 19.4.0 (September 22, 2025)
+  - Fix versions of depdendency
+  - Publish new version
+  - Bump version
+
 ## 19.3.0 (September 21, 2025)
   - Update packages
   - Publish new version
