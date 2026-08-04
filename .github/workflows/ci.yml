@@ -47,10 +47,39 @@ jobs:
       # Enumerated from angular.json rather than hardcoded: these repos are
       # monorepos (ngx-components ships 17 library projects), and a hardcoded list
       # silently stops covering whatever is added later.
-      - name: Build every library project
+      #
+      # Ordered TOPOLOGICALLY, because projects inside one repo depend on each
+      # other — ngx-mvc imports @polpware/ngx-noty, ngx-net-crud imports four
+      # siblings. Building in angular.json order fails on a clean runner with
+      # "Cannot find module '@polpware/ngx-noty'", since a sibling resolves only
+      # once it has been built into dist/. This is invisible locally, where dist/
+      # still holds the previous build.
+      - name: Build every library project, in dependency order
         run: |
           set -euo pipefail
-          PROJECTS=$(node -e "const a=require('./angular.json');console.log(Object.keys(a.projects).filter(k=>a.projects[k].projectType==='library').join('\n'))")
+          PROJECTS=$(node -e "
+            const fs=require('fs'), path=require('path');
+            const a=require('./angular.json');
+            const libs=Object.keys(a.projects).filter(k=>a.projects[k].projectType==='library');
+            const deps={};
+            for (const k of libs) {
+              const root=a.projects[k].root||a.projects[k].sourceRoot||'.';
+              let pj={};
+              try { pj=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8')); } catch {}
+              const all={...pj.dependencies, ...pj.peerDependencies};
+              deps[k]=Object.keys(all).filter(d=>libs.includes(d));
+            }
+            const order=[], seen=new Set(), temp=new Set();
+            const visit=(n)=>{
+              if (seen.has(n)) return;
+              if (temp.has(n)) throw new Error('dependency cycle at '+n);
+              temp.add(n);
+              for (const d of deps[n]||[]) visit(d);
+              temp.delete(n); seen.add(n); order.push(n);
+            };
+            libs.forEach(visit);
+            console.log(order.join('\n'));
+          ")
           if [ -z "$PROJECTS" ]; then
             echo "::error title=No library projects::angular.json declares no projectType=library entry - this gate would pass having built nothing."
             exit 1
