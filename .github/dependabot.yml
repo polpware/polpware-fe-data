@@ -1,0 +1,37 @@
+version: 2
+
+# Without this file, Dependabot raises automatic security PRs against the repo's
+# DEFAULT branch with no grouping and no ignores. Before 2026-08-04 the default
+# here was a `master` last touched years ago, so 90 such PRs accumulated across
+# the estate against a tree that no longer existed — none mergeable, all noise.
+#
+# Two rules make the alerts actionable instead:
+#   - target the live branch explicitly, so a PR applies to code we ship;
+#   - keep Angular out of it, because Angular majors move as a set through
+#     `polplibs upgrade` (branch per major), and a per-package bump would either
+#     conflict with that or land a mixed-major tree.
+updates:
+  - package-ecosystem: npm
+    directory: /
+    target-branch: ngx19
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      # One PR per ecosystem sweep rather than one per package: the previous
+      # ungrouped behaviour is what produced a 30-PR backlog in a single repo.
+      minor-and-patch:
+        patterns: ['*']
+        update-types: [minor, patch]
+    ignore:
+      # Owned by the Angular upgrade programme, not by Dependabot.
+      - dependency-name: '@angular/*'
+      - dependency-name: '@angular-devkit/*'
+      - dependency-name: 'ng-packagr'
+      - dependency-name: 'typescript'
+      - dependency-name: 'zone.js'
+      # Proprietary packages are pinned by git URL to frozen refs; Dependabot
+      # cannot reason about those and must not try.
+      - dependency-name: '@polpware/*'
+      - dependency-name: '@40three/*'
+      - dependency-name: 'ngx-log-monitor'
