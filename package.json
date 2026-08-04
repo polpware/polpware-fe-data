@@ -57,7 +57,7 @@
     "karma-cli": "~2.0.0",
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
+    "karma-jasmine-html-reporter": "~2.2.0",
     "moment": "^2.29.3",
     "ng-packagr": "^19.2.2",
     "polpware-tinymce-tailor": "https://github.com/polpware-frontend-modules/polpware-tinymce-tailor.git",
