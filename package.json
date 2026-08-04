@@ -62,9 +62,9 @@
     "ng-packagr": "^19.2.2",
     "polpware-tinymce-tailor": "https://github.com/polpware-frontend-modules/polpware-tinymce-tailor.git",
     "protractor": "~7.0.0",
-    "rxjs": "^6.6.3",
+    "rxjs": "^7.4.0",
     "ts-node": "~10.9.x",
-    "tslib": "^2.0.0",
+    "tslib": "^2.3.0",
     "typescript": "5.8.3",
     "typescript-eslint": "^8.0.0",
     "zone.js": "~0.15.1"
