@@ -63,24 +63,33 @@ jobs:
           done
 
       # Karma needs a browser. The ubuntu runner ships google-chrome-stable.
-      # Projects without a `test` target are skipped explicitly and named, so a
-      # repo with no specs reads as "nothing to run" rather than as a pass.
-      - name: Test every library project that has a test target
+      #
+      # A project is tested only if it declares a `test` target AND actually owns
+      # at least one *.spec.ts. Karma exits non-zero on an empty suite
+      # (failOnEmptyTestSuite defaults true), so running it against a spec-less
+      # project fails the gate for having nothing to do — which is noise, not
+      # signal. Both skip reasons are printed per project, so "no tests here" is
+      # visible in the log rather than indistinguishable from "tests passed".
+      - name: Test every library project that has specs
         env:
           CHROME_BIN: /usr/bin/google-chrome
         run: |
           set -euo pipefail
-          RAN=0
           PROJECTS=$(node -e "const a=require('./angular.json');console.log(Object.keys(a.projects).filter(k=>a.projects[k].projectType==='library').join('\n'))")
           echo "$PROJECTS" | while read -r p; do
             [ -n "$p" ] || continue
-            HAS=$(node -e "const a=require('./angular.json');const t=a.projects['$p'].architect||a.projects['$p'].targets||{};console.log(t.test?'yes':'no')")
-            if [ "$HAS" = "yes" ]; then
-              echo "::group::ng test $p"
-              npx ng test "$p" --watch=false --browsers=ChromeHeadless
-              echo "::endgroup::"
-              RAN=$((RAN+1))
-            else
-              echo "skipping $p - no test target declared"
+            HAS_TARGET=$(node -e "const a=require('./angular.json');const t=a.projects['$p'].architect||a.projects['$p'].targets||{};console.log(t.test?'yes':'no')")
+            if [ "$HAS_TARGET" != "yes" ]; then
+              echo "SKIP $p - declares no test target"
+              continue
             fi
+            ROOT=$(node -e "const a=require('./angular.json');console.log(a.projects['$p'].sourceRoot||a.projects['$p'].root||'.')")
+            SPECS=$(find "$ROOT" -name '*.spec.ts' 2>/dev/null | wc -l)
+            if [ "$SPECS" -eq 0 ]; then
+              echo "SKIP $p - test target declared but no *.spec.ts under $ROOT"
+              continue
+            fi
+            echo "::group::ng test $p ($SPECS spec file(s))"
+            npx ng test "$p" --watch=false --browsers=ChromeHeadless
+            echo "::endgroup::"
           done
