@@ -1,0 +1,95 @@
+name: CI
+
+# Library-layer gate (L0): does every library project in this repo still compile
+# and pass its own specs?
+#
+# Deliberately narrow. Behavioural acceptance for these packages rests on the
+# consumer suites in the two products, not here — a library's `ng build && ng test`
+# proves compilation, not behaviour. What this gate exists to catch is the thing
+# local verification keeps missing: a change that builds on the author's warm
+# machine but not from a clean checkout.
+#
+# No token is needed. The proprietary dependencies are git URLs into the PUBLIC
+# polpware-frontend-modules org, so a bare runner can clone them.
+
+on:
+  pull_request:
+    branches: [ngx19, ngx20, ngx21, esm, master, main]
+  push:
+    branches: [ngx19, ngx20, ngx21]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build and test every library project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      # npm ci installs strictly from package-lock.json. The library repos moved
+      # off Yarn Berry on 2026-08-04 so the whole estate is single-toolchain;
+      # .npmrc sets legacy-peer-deps=true to match the products (Yarn Berry did
+      # not hard-enforce peers, so npm's default resolver would reject a tree
+      # Yarn accepted).
+      - name: Install dependencies
+        run: npm ci
+
+      # Enumerated from angular.json rather than hardcoded: these repos are
+      # monorepos (ngx-components ships 17 library projects), and a hardcoded list
+      # silently stops covering whatever is added later.
+      - name: Build every library project
+        run: |
+          set -euo pipefail
+          PROJECTS=$(node -e "const a=require('./angular.json');console.log(Object.keys(a.projects).filter(k=>a.projects[k].projectType==='library').join('\n'))")
+          if [ -z "$PROJECTS" ]; then
+            echo "::error title=No library projects::angular.json declares no projectType=library entry - this gate would pass having built nothing."
+            exit 1
+          fi
+          echo "$PROJECTS" | while read -r p; do
+            [ -n "$p" ] || continue
+            echo "::group::ng build $p"
+            npx ng build "$p"
+            echo "::endgroup::"
+          done
+
+      # Karma needs a browser. The ubuntu runner ships google-chrome-stable.
+      #
+      # A project is tested only if it declares a `test` target AND actually owns
+      # at least one *.spec.ts. Karma exits non-zero on an empty suite
+      # (failOnEmptyTestSuite defaults true), so running it against a spec-less
+      # project fails the gate for having nothing to do — which is noise, not
+      # signal. Both skip reasons are printed per project, so "no tests here" is
+      # visible in the log rather than indistinguishable from "tests passed".
+      - name: Test every library project that has specs
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
+        run: |
+          set -euo pipefail
+          PROJECTS=$(node -e "const a=require('./angular.json');console.log(Object.keys(a.projects).filter(k=>a.projects[k].projectType==='library').join('\n'))")
+          echo "$PROJECTS" | while read -r p; do
+            [ -n "$p" ] || continue
+            HAS_TARGET=$(node -e "const a=require('./angular.json');const t=a.projects['$p'].architect||a.projects['$p'].targets||{};console.log(t.test?'yes':'no')")
+            if [ "$HAS_TARGET" != "yes" ]; then
+              echo "SKIP $p - declares no test target"
+              continue
+            fi
+            ROOT=$(node -e "const a=require('./angular.json');console.log(a.projects['$p'].sourceRoot||a.projects['$p'].root||'.')")
+            SPECS=$(find "$ROOT" -name '*.spec.ts' 2>/dev/null | wc -l)
+            if [ "$SPECS" -eq 0 ]; then
+              echo "SKIP $p - test target declared but no *.spec.ts under $ROOT"
+              continue
+            fi
+            echo "::group::ng test $p ($SPECS spec file(s))"
+            npx ng test "$p" --watch=false --browsers=ChromeHeadless
+            echo "::endgroup::"
+          done
