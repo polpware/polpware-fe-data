@@ -1,3 +1,26 @@
+## 19.4.0 (September 22, 2025)
+  - Fix versions of depdendency
+  - Publish new version
+  - Bump version
+
+## 19.3.0 (September 21, 2025)
+  - Update packages
+  - Publish new version
+  - Remove the use of when
+  - Bump version
+
+## 19.2.0 (September 21, 2025)
+  - Fix a potential issue
+  - Publish esm module
+  - Bump version
+
+## 19.1.0 (September 19, 2025)
+  - Adapt to ESModule
+  - Configure typescript
+  - Update package
+  - Publish Version 19
+  - Bump to Version 19
+
 ## 19.0.0 (July 17, 2025)
   - Install libs
   - Update custom libs

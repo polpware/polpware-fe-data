@@ -4,7 +4,7 @@
  * listening. Note that the credential is assumed to be Uppercase:
  * Username and Password
  */
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
 
 import {
     isArray
@@ -16,7 +16,7 @@ import { IEventArgs } from '../interfaces/event-args.interface';
 
 import { IPolicy } from './interfaces';
 
-const _ = dependencies.underscore;
+const _ = legacyLibs._;
 
 function isEquiva(a: any, b: any): boolean {
 

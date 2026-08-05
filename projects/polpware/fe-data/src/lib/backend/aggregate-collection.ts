@@ -9,12 +9,11 @@
  * preversing the state of each data provider.
  */
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+const _ = legacyLibs._;
 
 import { IBackboneCollectionLike } from '../interfaces/backbone.interface';
-
-const when = dependencies.when;
-const _ = dependencies.underscore;
 
 function hasNextPage(collection: IBackboneCollectionLike): boolean {
     if (!collection.state.totalPages && !collection.state.totalRecords) {
@@ -75,7 +74,7 @@ export class AggregateCollection {
                             return resp;
                         });
                 });
-                return when.settle(promises);
+                return Promise.all(promises);
             });
     }
 

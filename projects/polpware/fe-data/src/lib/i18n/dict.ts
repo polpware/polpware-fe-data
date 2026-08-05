@@ -6,14 +6,12 @@
  * @license Copyright @me
  */
 
-import * as dependencies from '@polpware/fe-dependencies';
-
-const _i18n = dependencies.I18n;
+import _i18n from '@polpware/tinymce-tailor/api/util/I18n';
 
 export class I18n {
 
     static getDictByCode(code: string) {
-        return _i18n.data[code];
+        return _i18n.getData()[code];
     }
 
     /**
@@ -46,7 +44,7 @@ export class I18n {
      * @param {String} code The language code which should not released.
      */
     static recycleOthers(code: string) {
-        const data = _i18n.data;
+        const data = _i18n.getData();
         const recycleList = [];
         for (const key in data) {
             // skip loop if the property is from prototype

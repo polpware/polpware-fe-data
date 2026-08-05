@@ -26,9 +26,7 @@
 // sale, use or other dealings in this Software without prior written
 // authorization.
 
-import * as dependencies from '@polpware/fe-dependencies';
-
-const EventDispatcher = dependencies.EventDispatcher;
+import EventDispatcher from '@polpware/tinymce-tailor/api/util/EventDispatcher';
 
 import { IEventArgs } from '../interfaces/event-args.interface';
 

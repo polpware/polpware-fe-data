@@ -4,7 +4,9 @@
  * This table is observable, i.e., any change on this table will be notified to its listeners.
  */
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+
 import { pushArray } from '@polpware/fe-utilities';
 import {
     IModelLike,
@@ -14,9 +16,9 @@ import {
 } from '../interfaces/backbone.interface';
 import { DummyRecords } from './dummy-records';
 
-const backbone = dependencies.backbone;
-const _ = dependencies.underscore;
-const cjs = dependencies.constraintjs;
+const backbone = legacyLibs.Backbone;
+const _ = legacyLibs._;
+const cjs = legacyLibs.cjs;
 
 export interface IRelationalTableOptions {
     name: string;

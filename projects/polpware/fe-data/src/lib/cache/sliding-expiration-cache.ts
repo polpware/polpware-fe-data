@@ -26,7 +26,10 @@
 // sale, use or other dealings in this Software without prior written
 // authorization.
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+const locache = legacyLibs.locache;
+const meld = legacyLibs.meld;
 
 import { MemoryBackend } from './memory-backend';
 import { observableDecorator } from '../decorators/observable.decorator';
@@ -38,10 +41,7 @@ import { INgZoneLike } from '../interfaces/ng-zone-like.interface';
 
 import { ISlidingExpireCache } from './sliding-expire-cache.interface';
 
-const locache = dependencies.locache;
-const meld = dependencies.meld;
-
-const originalRemove = Object.getPrototypeOf(locache.locache).remove;
+const originalRemove = Object.getPrototypeOf(locache).remove;
 
 const currentTime = function() {
     return new Date().getTime();
@@ -57,7 +57,7 @@ export class SlidingExpirationCache<T> implements ISlidingExpireCache<T> {
         scheduleInterval?: number, ngZone?: INgZoneLike) {
 
         const backend = new MemoryBackend<T>();
-        this._cache = locache.locache.createCache({ storage: backend });
+        this._cache = locache.createCache({ storage: backend });
 
         this._cache.remove = meld.around(originalRemove, (input: IJoinpoint) => {
 

@@ -2,11 +2,11 @@
  * @fileOverview
  * Defines a global dummy records for tables. Each table is configured with a dummy record.
  */
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
+
+const backbone = legacyLibs.Backbone;
 
 import { IModelLike } from '../interfaces/backbone.interface';
-
-const backbone = dependencies.backbone;
 
 export class DummyRecords {
 
