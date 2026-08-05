@@ -1,6 +1,6 @@
 {
     "name": "@polpware/fe-data",
-    "version": "19.0.0",
+    "version": "19.4.0",
     "dependencies": {
       "tslib": "^2.0.0"
     },
@@ -9,8 +9,8 @@
         "@angular/core": "^19.0.0",
         "@ngrx/store": "^19.0.0",
         "@ngrx/store-devtools": "^19.0.0",
-        "@polpware/fe-dependencies": "^1.6.0",
+        "@polpware/amd-bridge": "^2.0.0",
         "@polpware/fe-utilities": "^19.0.0",
-        "polpware-tinymce-tailor": "^4.7.0"
+        "@polpware/tinymce-tailor": "~0.x.0"
     }
 }

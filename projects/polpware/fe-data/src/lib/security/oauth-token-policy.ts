@@ -3,7 +3,7 @@
  * Defines a base class for retrieving OAuth2 tokens.
  */
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
 
 import { safeParseInt } from '@polpware/fe-utilities';
 import {
@@ -13,8 +13,8 @@ import {
 } from './interfaces';
 import { PolicyBase } from './policy-base';
 
-const _ = dependencies.underscore;
-const $ = dependencies.jquery;
+const _ = legacyLibs._;
+const $ = legacyLibs.$;
 
 export function adaptToOAuthToken(data): IOAuthToken {
     data = data || {};

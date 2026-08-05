@@ -3,13 +3,13 @@
  * A base class for defining security plicies.
  */
 
-import * as dependencies from '@polpware/fe-dependencies';
+import { legacyLibs } from '@polpware/amd-bridge';
 
 import { lift } from '@polpware/fe-utilities';
 
 import { IPolicyCtorOptions, IPolicy } from './interfaces';
 
-const _ = dependencies.underscore;
+const _ = legacyLibs._;
 
 export abstract class PolicyBase implements IPolicy {
 
