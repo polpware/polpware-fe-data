@@ -44,7 +44,7 @@
     "@types/jasmine": "~5.1.8",
     "@types/node": "^20.11.0",
     "angular-eslint": "^19.0.0",
-    "core-js": "^3.6.5",
+    "core-js": "^3.50.0",
     "eslint": "^9.0.0",
     "gulp": "^5.0.1",
     "gulp-bump": "^3.2.0",
@@ -57,7 +57,7 @@
     "karma-cli": "~2.0.0",
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
+    "karma-jasmine-html-reporter": "~2.3.0",
     "moment": "^2.29.3",
     "ng-packagr": "^19.2.2",
     "polpware-tinymce-tailor": "https://github.com/polpware-frontend-modules/polpware-tinymce-tailor.git",
@@ -66,7 +66,7 @@
     "ts-node": "~10.9.x",
     "tslib": "^2.0.0",
     "typescript": "5.8.3",
-    "typescript-eslint": "^8.0.0",
+    "typescript-eslint": "^8.68.0",
     "zone.js": "~0.15.1"
   }
 }
