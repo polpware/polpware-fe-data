@@ -58,7 +58,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "moment": "^2.29.3",
+    "moment": "^2.31.0",
     "ng-packagr": "^19.2.2",
     "polpware-tinymce-tailor": "https://github.com/polpware-frontend-modules/polpware-tinymce-tailor.git",
     "protractor": "~7.0.0",
